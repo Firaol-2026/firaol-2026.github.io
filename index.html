@@ -1,12 +1,12 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="om">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Firaol Gemeda Fufa | FIRAOL VISUALS</title>
+  <title>FIRAOL VISUALS | Firaol Gemeda Fufa</title>
 
-  <meta name="description" content="Firaol Gemeda Fufa - Photographer, Video Editor and Visual Creator from Ethiopia. FIRAOL VISUALS.">
+  <meta name="description" content="Firaol Visuals - Photography, Video Editing, AI Video Creation and Digital Creative Content by Firaol Gemeda Fufa.">
 
   <style>
     * {
@@ -20,74 +20,673 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #080808;
-      color: #fff;
+      color: #ffffff;
       line-height: 1.7;
     }
 
-    header {
-      min-height: 100vh;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(8,8,8,0.95);
+      border-bottom: 1px solid #222;
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-content {
+      min-height: 70px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      background:
-        radial-gradient(circle at top, #252525 0%, #080808 55%);
+      justify-content: space-between;
     }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #00e5ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #ddd;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00e5ff;
+    }
+
+    /* HERO */
 
     .hero {
-      max-width: 900px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, #12313a 0%, #080808 45%);
     }
 
-    .brand {
-      color: #d4af37;
-      letter-spacing: 5px;
+    .hero-content {
+      width: 100%;
+    }
+
+    .small-title {
+      color: #00e5ff;
       font-size: 15px;
-      font-weight: bold;
-      margin-bottom: 20px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
-    h1 {
-      font-size: clamp(42px, 9vw, 90px);
-      line-height: 1.05;
+    .hero h1 {
+      font-size: clamp(45px, 10vw, 90px);
+      line-height: 1;
       margin-bottom: 20px;
+      letter-spacing: -3px;
+    }
+
+    .hero h1 span {
+      color: #00e5ff;
     }
 
     .hero p {
-      font-size: 19px;
-      color: #ccc;
-      margin-bottom: 35px;
+      max-width: 700px;
+      margin: auto;
+      color: #bbb;
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 28px;
-      border: 1px solid #d4af37;
-      color: #d4af37;
-      text-decoration: none;
+      padding: 13px 25px;
+      border: 1px solid #00e5ff;
       border-radius: 30px;
-      transition: .3s;
+      color: #00e5ff;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #d4af37;
+      background: #00e5ff;
+      color: #000;
+      transform: translateY(-3px);
+    }
+
+    .btn-main {
+      background: #00e5ff;
       color: #000;
     }
 
+    /* SECTIONS */
+
     section {
-      max-width: 1000px;
+      padding: 90px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #888;
+    }
+
+    /* ABOUT */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #111;
+      border: 1px solid #222;
+      padding: 35px;
+      border-radius: 20px;
+    }
+
+    .about-box h3 {
+      font-size: 27px;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: #aaa;
+    }
+
+    .highlight {
+      color: #00e5ff;
+    }
+
+    /* SERVICES */
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .service {
+      background: #111;
+      border: 1px solid #222;
+      padding: 30px;
+      border-radius: 18px;
+      transition: 0.3s;
+    }
+
+    .service:hover {
+      border-color: #00e5ff;
+      transform: translateY(-5px);
+    }
+
+    .service .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      color: #999;
+      font-size: 15px;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .work {
+      min-height: 230px;
+      border-radius: 18px;
+      border: 1px solid #222;
+      background: linear-gradient(145deg, #151515, #090909);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .work:hover {
+      transform: scale(1.02);
+      border-color: #00e5ff;
+    }
+
+    .work h3 {
+      font-size: 20px;
+    }
+
+    .work p {
+      color: #777;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    /* SOCIAL */
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social {
+      padding: 14px 22px;
+      border: 1px solid #333;
+      border-radius: 30px;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      border-color: #00e5ff;
+      color: #00e5ff;
+    }
+
+    /* CONTACT */
+
+    .contact-box {
+      max-width: 700px;
       margin: auto;
-      padding: 90px 25px;
+      text-align: center;
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 25px;
+      padding: 45px 25px;
     }
 
-    .title {
-      color: #d4af37;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 14px;
-      margin-bottom: 12px;
+    .contact-box h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
     }
 
-    h2 {
+    .contact-box p {
+      color: #999;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #222;
+      text-align: center;
+      padding: 30px 15px;
+      color: #777;
+    }
+
+    footer strong {
+      color: #00e5ff;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .nav-content {
+        justify-content: center;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+
+      .hero h1 {
+        font-size: 52px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .portfolio {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-title h2 {
+        font-size: 31px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <div class="container nav-content">
+
+      <div class="logo">
+        FIRAOL<span>VISUALS</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="small-title">
+        FIRAOL VISUALS
+      </div>
+
+      <h1>
+        Create.<br>
+        <span>Inspire.</span><br>
+        Impact.
+      </h1>
+
+      <p>
+        I'm Firaol Gemeda Fufa — a digital content creator
+        passionate about storytelling, photography, creative
+        visual media and AI-powered content.
+      </p>
+
+      <div class="buttons">
+        <a href="#portfolio" class="btn btn-main">
+          View My Work
+        </a>
+
+        <a href="#contact" class="btn">
+          Contact Me
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>The person behind FIRAOL VISUALS</p>
+      </div>
+
+      <div class="about">
+
+        <div class="about-box">
+          <h3>
+            Hi, I'm <span class="highlight">
+              Firaol Gemeda Fufa
+            </span>
+          </h3>
+
+          <p>
+            I am a creative digital content creator who loves
+            turning ideas into powerful visual stories.
+            My passion is photography, video creation,
+            editing, digital art and new AI technologies.
+          </p>
+        </div>
+
+        <div class="about-box">
+
+          <h3>My Vision</h3>
+
+          <p>
+            My goal is to build a strong creative brand and
+            create visual content that people remember,
+            connect with and enjoy.
+          </p>
+
+          <br>
+
+          <p>
+            <span class="highlight">
+              Turn Ideas Into Visuals.
+            </span>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>What I Do</h2>
+        <p>Creative services by FIRAOL VISUALS</p>
+      </div>
+
+      <div class="services">
+
+        <div class="service">
+          <div class="icon">📸</div>
+          <h3>Photography</h3>
+          <p>
+            Creative photography, portraits, events and
+            visual storytelling.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>
+            Engaging video editing for social media,
+            YouTube and digital content.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="icon">🤖</div>
+          <h3>AI Video Creation</h3>
+          <p>
+            Creative AI-powered videos, transformations,
+            stories and digital experiences.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="icon">🎨</div>
+          <h3>Graphic Design</h3>
+          <p>
+            Posters, social media designs, branding and
+            creative digital graphics.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>My Portfolio</h2>
+        <p>A selection of my creative work</p>
+      </div>
+
+      <div class="portfolio">
+
+        <div class="work">
+          <div>
+            <h3>📷 Photography</h3>
+            <p>Portrait & Creative Photography</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <div>
+            <h3>🎥 Video Creation</h3>
+            <p>Storytelling & Social Media Videos</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <div>
+            <h3>🤖 AI Visuals</h3>
+            <p>AI Generated Creative Content</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <div>
+            <h3>🎨 Digital Art</h3>
+            <p>Creative Visual Experiments</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <div>
+            <h3>🖼️ Poster Design</h3>
+            <p>Digital Posters & Promotions</p>
+          </div>
+        </div>
+
+        <div class="work">
+          <div>
+            <h3>✨ Creative Projects</h3>
+            <p>Ideas transformed into visuals</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOCIAL MEDIA -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Find Me Online</h2>
+        <p>Follow my creative journey</p>
+      </div>
+
+      <div class="socials">
+
+        <a
+          class="social"
+          href="https://instagram.com/firoo"
+          target="_blank">
+          📸 Instagram
+        </a>
+
+        <a
+          class="social"
+          href="https://youtube.com/"
+          target="_blank">
+          ▶️ YouTube
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="contact-box">
+
+        <h2>Let's Create Something Amazing</h2>
+
+        <p>
+          Have an idea, project or collaboration?
+          Let's turn your idea into a visual story.
+        </p>
+
+        <div class="buttons">
+
+          <a class="btn btn-main"
+             href="mailto:firaolgemedafufa@gmail.com">
+            ✉️ Email Me
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 <strong>FIRAOL VISUALS</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Firaol Gemeda Fufa
+    </p>
+
+  </footer>
+
+</body>
+</html>
